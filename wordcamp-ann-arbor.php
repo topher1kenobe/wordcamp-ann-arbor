@@ -64,22 +64,22 @@ class AnnArbor_Badge_Widget extends WP_Widget {
 	public function widget( $args, $instance ) {
 		$title = apply_filters( 'widget_title', $instance['title'] );
 
-		echo $args['before_widget'];
+		echo wp_kses_post( $args['before_widget'] );
 		if ( ! empty( $title ) ) {
-			echo $args['before_title'] . $title . $args['after_title'];
+			echo wp_kses_post( $args['before_title'] . $title . $args['after_title'] );
 		}
 
 		echo '<ul>' . "\n";
 
 		foreach ( $instance as $key => $val ) {
 			if ( $val == 1 ) {
-				echo '<li class="' . $key . '"><img src="' . plugins_url( 'images/' . $key . '.png ', __FILE__ ) . '" /></li>';
+				echo '<li class="' . wp_kses_post( $key ) . '"><img src="' . esc_url( plugins_url( 'images/' . $key . '.png ', __FILE__ ) ) . '" /></li>';
 			}
 		}
 
 		echo '</ul>' . "\n";
 
-		echo $args['after_widget'];
+		echo wp_kses_post( $args['after_widget'] );
 	}
 
 	/**
@@ -100,8 +100,8 @@ class AnnArbor_Badge_Widget extends WP_Widget {
 
 		?>
 		<p>
-		<label for="<?php echo $this->get_field_id( 'title' ); ?>"><?php _e( 'Title:' ); ?></label> 
-		<input class="widefat" id="<?php echo $this->get_field_id( 'title' ); ?>" name="<?php echo $this->get_field_name( 'title' ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
+		<label for="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>"><?php _e( 'Title:' ); ?></label> 
+		<input class="widefat" id="<?php echo esc_attr( $this->get_field_id( 'title' ) ); ?>" name="<?php echo esc_attr( $this->get_field_name( 'title' ) ); ?>" type="text" value="<?php echo esc_attr( $title ); ?>">
 		</p>
 
 		<p><strong>Choose Badges</strong></p>
