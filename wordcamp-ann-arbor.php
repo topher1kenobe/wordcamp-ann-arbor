@@ -4,7 +4,7 @@ Plugin Name: WordCamp Ann Arbor
 Plugin URI: http://2014.annarbor.wordcamp.org
 Description: Creates a widget for rendering badges
 Author: Topher
-Version: 1.0
+Version: 1.1
 Author URI: http://topher1kenobe.com
 "WordCamp Ann Arbor" is released under the GNU General Public License (GPL)
 http://www.gnu.org/licenses/gpl-2.0.txt
