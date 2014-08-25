@@ -4,7 +4,7 @@ Plugin Name: WordCamp Ann Arbor
 Plugin URI: http://2014.annarbor.wordcamp.org
 Description: Creates a widget for rendering badges
 Author: Topher
-Version: 1.1
+Version: 1.2
 Author URI: http://topher1kenobe.com
 "WordCamp Ann Arbor" is released under the GNU General Public License (GPL)
 http://www.gnu.org/licenses/gpl-2.0.txt
@@ -73,7 +73,7 @@ class AnnArbor_Badge_Widget extends WP_Widget {
 
 		foreach ( $instance as $key => $val ) {
 			if ( $val == 1 ) {
-				echo '<li class="' . wp_kses_post( $key ) . '"><img src="' . esc_url( plugins_url( 'images/' . $key . '.png ', __FILE__ ) ) . '" /></li>';
+				echo '<li class="' . wp_kses_post( $key ) . '"><a href="http://2014.annarbor.wordcamp.org/"><img src="' . esc_url( plugins_url( 'images/' . $key . '.png ', __FILE__ ) ) . '" /></a></li>';
 			}
 		}
 
