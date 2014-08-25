@@ -25,5 +25,11 @@ This plugin provides a widget to render WordCamp support badges.  It offers the 
 
 == Changelog ==
 
+= 1.2 =
+Make images link to WordCamp site
+
+= 1.1 =
+Bug fixes relating to image paths
+
 = 1.0 =
 * Initial release
