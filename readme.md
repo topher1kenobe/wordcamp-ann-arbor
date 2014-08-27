@@ -7,7 +7,7 @@ This plugin provides a widget to render WordCamp support badges.
 **Tags:** [widget](http://wordpress.org/plugins/tags/widget), [wordcamp](http://wordpress.org/plugins/tags/wordcamp)  
 **Requires at least:** 3.0  
 **Tested up to:** 3.9.2  
-**Stable tag:** 1.2  
+**Stable tag:** 1.2.1  
 **License:** [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)  
 
 ## Description ##
@@ -24,6 +24,9 @@ This plugin provides a widget to render WordCamp support badges.  It offers the 
 
 
 ## Changelog ##
+
+### 1.2.1 ###
+Check for WP 4.0
 
 ### 1.2 ###
 Make images link to WordCamp site
