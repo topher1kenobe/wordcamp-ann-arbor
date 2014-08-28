@@ -6,7 +6,7 @@ This plugin provides a widget to render WordCamp support badges.
 **Contributors:** [topher1kenobe](http://profiles.wordpress.org/topher1kenobe)  
 **Tags:** [widget](http://wordpress.org/plugins/tags/widget), [wordcamp](http://wordpress.org/plugins/tags/wordcamp)  
 **Requires at least:** 3.0  
-**Tested up to:** 3.9.2  
+**Tested up to:** 4.0  
 **Stable tag:** 1.2.1  
 **License:** [GPLv2 or later](http://www.gnu.org/licenses/gpl-2.0.html)  
 
